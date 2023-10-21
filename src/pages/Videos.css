@@ -1,0 +1,23 @@
+.video-container {
+  position: relative;
+  width: 100%;
+}
+
+.video-player {
+  width: 100%;
+  cursor: pointer;
+}
+
+.video-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: none;
+}
+
+.video-container:hover .video-controls {
+  display: block;
+}

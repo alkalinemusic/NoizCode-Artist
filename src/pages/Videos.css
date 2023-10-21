@@ -1,23 +1,47 @@
 .video-container {
-  position: relative;
-  width: 100%;
+  background-color: #333; /* Dark background color */
+  margin-top: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%; /* Full width */
+}
+
+.video-player,
+.video-list {
+  background-color: #333; /* Dark background color */
 }
 
 .video-player {
-  width: 100%;
-  cursor: pointer;
+  text-align: center;
+  width: 50%;
+  overflow: hidden;
 }
 
-.video-controls {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+.video-list {
+  text-align: center;
+  margin-left: 20px;
   color: white;
-  display: none;
 }
 
-.video-container:hover .video-controls {
-  display: block;
+.video-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.video-list li {
+  margin-bottom: 10px;
+  color: white; /* Text color */
+}
+
+.video-title {
+  font-weight: bold;
+  color: white;
+}
+
+.video-description {
+  font-size: 0.8em;
+  color: #aaa;
 }
